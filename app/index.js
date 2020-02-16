@@ -1,3 +1,13 @@
+const pbutton = document.querySelectorAll('.p-button');
+
+console.log(pbutton);
+
+pbutton.forEach(button => {
+    button.addEventListener('click', () => {
+        des.hidden = !des.hidden;
+    })
+})
+
 var job = [
     {
         sign: "Paladin",

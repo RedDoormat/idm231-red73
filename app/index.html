@@ -12,24 +12,51 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="wrapper">
+        <div class="header">
+            <div>
+                <head>What FFXIV job are you?</head>
+            </div>
+
+            <div class="date-input">
+                <label>Enter Your Birthday:</label>
+                <input type="date" year="Name" placeholder="MM/DD/YYYY" required input maxlength="">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
         
+        <div class="zodiac-buttons">
+            <button class="p-button" id="paladin"><img src="images/icon_paladin.png" alt="Paladin Icon"></button>
+            <button class="p-button" id="warrior"><img src="images/icon_warrior.png" alt="Warrior Icon"></button>
+            <button class="p-button" id="darknight"><img src="images/icon_darknight.png" alt="Darknight Icon"></button>
+            <button class="p-button" id="dragoon"><img src="images/icon_dragoon.png" alt="Dragoon Icon"></button>
+            <button class="p-button" id="monk"><img src="images/icon_monk.png" alt="Monk Icon"></button>
+            <button class="p-button" id="ninja"><img src="images/icon_ninja.png" alt="Ninja Icon"></button>
+            <button class="p-button" id="bard"><img src="images/icon_bard.png" alt="Bard Icon"></button>
+            <button class="p-button" id="machinist"><img src="images/icon_machinist.png" alt="Machinist Icon"></button>
+            <button class="p-button" id="black-mage"><img src="images/icon_black-mage.png" alt="Black Mage Icon"></button>
+            <button class="p-button" id="summoner"><img src="images/icon_summoner.png" alt="Summoner Icon"></button>
+            <button class="p-button" id="white-mage"><img src="images/icon_white-mage.png" alt="White Mage Icon"></button>
+            <button class="p-button" id="astrologian"><img src="images/icon_astrologian.png" alt="Astrologian Icon"></button>
+        </div>
+        <div class="display" hidden>
+            <div id="info">
+                <img src="images/pixel_bard.png" alt="Bard">
+                <h1>Bard</h1>
+                <h3>Date - Date</h3>
+            </div>
+            <div id="fluff">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus repellendus nostrum 
+                    perspiciatis voluptate consequuntur repudiandae, ex perferendis tenetur! Ipsum impedit 
+                    unde mollitia deserunt dolore harum odio hic nihil reprehenderit ullam!
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="zodiac-icons">
-        <ul>
-            <li><img src="images/icon_paladin.png" alt="Paladin Icon"></li>
-            <li><img src="images/icon_warrior.png" alt="Warrior Icon"></li>
-            <li><img src="images/icon_darknight.png" alt="Darknight Icon"></li>
-            <li><img src="images/icon_dragoon.png" alt="Dragoon Icon"></li>
-            <li><img src="images/icon_monk.png" alt="Monk Icon"></li>
-            <li><img src="images/icon_ninja.png" alt="Ninja Icon"></li>
-            <li><img src="images/icon_bard.png" alt="Bard Icon"></li>
-            <li><img src="images/icon_machinist.png" alt="Machinist Icon"></li>
-            <li><img src="images/icon_black-mage.png" alt="Black Mage Icon"></li>
-            <li><img src="images/icon_summoner.png" alt="Summoner Icon"></li>
-            <li><img src="images/icon_white-mage.png" alt="White Mage Icon"></li>
-            <li><img src="images/icon_astrologian.png" alt="Astrologian Icon"></li>
-        </ul>
-    </div>
+
+<script src="index.js"></script>
+
 </body>
+
 </html>
