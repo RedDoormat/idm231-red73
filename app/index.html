@@ -8,10 +8,12 @@
 
     <link rel="stylesheet" href="normalize.css"> <!--Should universalize formatting between browsers-->
     <link rel="stylesheet" href="index.css"> <!--Main stylesheet-->
-    <script src="index.js"></script>
 </head>
 
 <body>
+    <div class="help">
+        <button><p>?</p></button>
+    </div>
     <div class="wrapper">
         <div class="header">
             <div>
@@ -20,7 +22,7 @@
 
             <div class="date-input">
                 <label>Enter Your Birthday:</label>
-                <input type="date" year="Name" placeholder="MM/DD/YYYY" required input maxlength="">
+                <input id="birthday" type="date" year="Name" placeholder="MM/DD/YYYY" required input maxlength="">
                 <input type="submit" value="Submit">
             </div>
         </div>
@@ -39,23 +41,24 @@
             <button class="p-button" id="white-mage"><img src="images/icon_white-mage.png" alt="White Mage Icon"></button>
             <button class="p-button" id="astrologian"><img src="images/icon_astrologian.png" alt="Astrologian Icon"></button>
         </div>
+
         <div class="display" hidden>
             <div id="info">
-                <img src="images/pixel_bard.png" alt="Bard">
-                <h1>Bard</h1>
-                <h3>Date - Date</h3>
-            </div>
-            <div id="fluff">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus repellendus nostrum 
-                    perspiciatis voluptate consequuntur repudiandae, ex perferendis tenetur! Ipsum impedit 
-                    unde mollitia deserunt dolore harum odio hic nihil reprehenderit ullam!
+                <img id="hero" src="images/pixel_bard.png" alt="Bard">
+                <h1 id="name">Bard</h1>
+                <h3 id="date">Date - Date</h3>
+                <p id="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Tempora perferendis rerum eligendi fuga commodi sunt quia 
+                    laborum dolor a. Recusandae, veniam ipsam? Ex dignissimos 
+                    nesciunt molestiae cupiditate, explicabo eius error!
                 </p>
             </div>
         </div>
+        
     </div>
 
-<script src="index.js"></script>
+    <script src="index.js"></script>
 
 </body>
 
