@@ -4,11 +4,21 @@ const dis = document.querySelectorAll('.display')[0];
 console.log(pbutton);
 console.log(dis);
 
+const bhelp = document.querySelectorAll('.bhelp');
+const help = document.querySelectorAll('.helpoverlay')[0];
+console.log(bhelp);
+console.log(help);
 
 pbutton.forEach(button => {
     button.addEventListener('click', () => {
         dis.hidden = !dis.hidden;
     })
+})
+
+bhelp.forEach(button => {
+  button.addEventListener('click', () => {
+    help.hidden = !help.hidden;
+  })
 })
 
 var job = [

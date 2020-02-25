@@ -42,6 +42,19 @@
     font-size: 1rem;
 }
 
+.helpoverlay{
+    color: white;
+    background-color: brown;
+    position: fixed;
+    top:50%;
+    left:50%;
+    width: 24rem;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -60%);
+}
+
 body {
     background-image: url(images/zodiac-web-background.jpg);
     background-size: cover;
