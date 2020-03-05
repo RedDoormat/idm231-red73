@@ -1,0 +1,99 @@
+* { /*Helps with math of margin and padding*/
+    box-sizing: border-box;
+}
+
+@font-face { /*Fonts*/
+    font-family: 'Arvo';
+    src: url('fonts/Arvo.woff') format('woff');
+}
+
+html {
+    font-family: Arvo, serif;
+}
+
+body{
+    background: rgb(0,190,217);
+    background: linear-gradient(90deg, rgba(0,190,217,1) 0%, rgba(175,242,255,1) 100%);
+    color: rgb(247, 247, 247);
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.wrapper{
+    margin: 1rem;
+    padding: .5rem;
+}
+   
+#characteristic {
+    margin: .5rem auto;
+    width: 60%;
+    color: white;
+    padding: .5rem;
+    background: rgb(26, 26, 26);
+    border-radius: .5rem;
+}
+   
+#space{
+    font-size: 2rem;
+    margin: 1.5rem 0 0 0;
+}
+   
+a.button {
+    border-radius: .5rem;
+    margin-bottom: 5rem;
+    box-shadow: 0 .2rem .3rem rgba(36, 46, 48, 0.25);
+    background-color: grey;
+    color: whitesmoke;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+a.button:hover {
+    cursor: pointer;
+    color: gainsboro;
+}
+
+h1 {
+    margin: .5rem;
+}
+
+h2 {
+    margin: .5rem;
+}
+
+#photo {
+    margin: .5rem;
+}
+
+/* img {
+    width: 20%;
+}*/
+
+button {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.helpoverlay{
+    color: white;
+    background-color: brown;
+    position: fixed;
+    top:50%;
+    left:50%;
+    width: 24rem;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-shadow: 5px 10px #888888;
+    transform: translate(-50%, -60%);
+}
+
+.help {
+    float: left;
+    background-color: white;
+    margin: 0;
+    padding: .5rem 1.5rem;
+}
