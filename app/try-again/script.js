@@ -91,4 +91,4 @@ bhelp.forEach(button => {
     button.addEventListener('click', () => {
       help.hidden = !help.hidden;
     })
-  })
+})

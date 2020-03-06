@@ -12,8 +12,8 @@ html {
 }
 
 body{
-    background: rgb(0,190,217);
-    background: linear-gradient(90deg, rgba(0,190,217,1) 0%, rgba(175,242,255,1) 100%);
+    background: rgb(129,0,0);
+    background: linear-gradient(90deg, rgba(129,0,0,1) 0%, rgba(210,0,0,1) 100%);
     color: rgb(247, 247, 247);
     font-size: 1.25rem;
     text-align: center;
@@ -79,7 +79,7 @@ button {
 
 .helpoverlay{
     color: white;
-    background-color: brown;
+    background-color: rgb(0, 96, 97);
     position: fixed;
     top:50%;
     left:50%;
@@ -93,7 +93,16 @@ button {
 
 .help {
     float: left;
-    background-color: white;
     margin: 0;
-    padding: .5rem 1.5rem;
+    position: absolute;
+}
+
+.bhelp {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+img.help {
+    width: 500%;
 }
