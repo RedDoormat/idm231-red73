@@ -70,6 +70,7 @@ function zodiac(){
     }
     
     if(birthmonth == 12 && birthday >= 22 || birthmonth == 1 && birthday <= 19){
+        updateZodInfo("white-mage");
         result = ("White Mage");
         document.getElementById("photo").innerHTML="<img src='images/pixel_white-mage.png'>";
         document.getElementById("characteristic").innerHTML="Members of this sign has an insatiable desire to climb higher and during this course they can also become selfish and might not hesitate to sacrifice other’s interests in fulfilling their goals.Capricorns may seem risk averse but in reality they carefully plan all their moves ahead and rehearse them to perfection.";
@@ -86,6 +87,39 @@ const bhelp = document.querySelectorAll('.bhelp');
 const help = document.querySelectorAll('.helpoverlay')[0];
 console.log(bhelp);
 console.log(help);
+
+const soundButtons = document.querySelectorAll('.p-button');
+const speakers = document.getElementById('speakers');
+
+soundButtons.forEach(button => {
+    const sound = button.dataset.sound;
+    button.addEventListener('click', () => {
+        updateZodInfo(sound);
+        console.log("sound is "+ sound);
+    });
+  });
+
+function updateZodInfo(whichOne){
+    speakers.src = `sound/${whichOne}.mp3`;
+    speakers.play();
+    if(whichOne == "ninja"){
+        result = ("Ninja");
+        document.getElementById("photo").innerHTML="<img src='images/pixel_ninja.png'>";
+        document.getElementById("characteristic").innerHTML="Blah"
+    }
+
+    else if(whichOne == "bard"){
+        result = ("Bard");
+        document.getElementById("photo").innerHTML="<img src='images/pixel_bard.png'>";
+        document.getElementById("characteristic").innerHTML="Blah"
+    }
+
+    else if(whichOne == "warrior"){
+        result = ("Warrior");
+        document.getElementById("photo").innerHTML="<img src='images/pixel_warrior.png'>";
+        document.getElementById("characteristic").innerHTML="Blah"
+    }
+}
 
 bhelp.forEach(button => {
     button.addEventListener('click', () => {
